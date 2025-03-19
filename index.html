@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Enlace a Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Enlace a Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a Bootstrap 5 Iconos(Redes sociales) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Enlace a hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a script -->
+    <script src="script.js" defer></script>
+    <!-- Enlace a GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black text-center py-2 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="logo.gif" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav nav-underline">
+                    <li class="nav-item"><a class="nav-link" href="../perfil/perfil.html">PERFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../habilidades/habilidades.html">HABILIDADES</a></li>
+
+                    <!-- Dropdown para Evidencias -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="evidencias/evidencias.html"
+                            id="navbarDropdownEvidencias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVIDENCIAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvidencias">
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia1">ACADÉMICO</a></li>
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia2">FREELANCE</a></li>
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia3">PERSONAL</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown para Diplomas -->
+                    <li class="nav-item"><a class="nav-link" href="../diplomas/diplomas.html">DIPLOMAS</a></li>
+
+                    <!-- Dropdown para Certificados -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="certificados/certificados.html"
+                            id="navbarDropdownCertificados" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CERTIFICADOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCertificados">
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado1">DESARROLLO WEB/APLICACIONES</a></li>
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado2">INTELIGENCIA ARTIFICIAL</a></li>
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado3">Y MÁS...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="../contactos/contactos.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección_1 -->
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="banner_2.0.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+    </div>
+
+    <!-- Sección_2 -->
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-4 order-1 order-md-1">
+                            <div class="iframe-container">
+                                <iframe src="https://www.youtube.com/embed/JKFMZa-r3LM?si=TAIZ5Y5aT1wWIMYC"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Hola, y bienvenido a mi portafolio profesional, aquí encontrarás mis habilidades, experiencia y
+                    proyectos, los cuales reflejan mi trayectoria y lo que me apasiona. ¡Espero que disfrutes
+                    explorando!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección_3 -->
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="fondo1.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <p>Este proyecto esta inspirado en el juego del dinosaurio de
+                    Google Chrome, que jugaba de niño cuando no tenía acceso a internet. Esa experiencia marcó mi
+                    interés por la tecnología y los proyectos creativos, dándole un significado especial a este trabajo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Redes_sociales -->
+    <footer class="text-white text-center p-1">
+        <p class="mt-3">&copy; 2025 Santiago Sagrero Arvea. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100071773301879&locale=es_LA" target="_blank"
+                class="text-white me-3">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/@INGENEASTA" target="_blank" class="text-white">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

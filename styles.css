@@ -1,0 +1,415 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Asegurar que el video cubra toda la pantalla sin distorsión */
+.fondo-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fondo-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video {
+    overflow: hidden;  /* Esto oculta cualquier contenido que se salga del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Ajustes para el iframe y contenido */
+.contenido {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaciado uniforme */
+    font-size: 1.3em; /* Aquí puedes aumentar el tamaño */
+}
+
+/* Asegura la transparencia en la tarjeta */
+.card {
+    background-color: transparent;  /* Fondo de la tarjeta transparente */
+    border: none;  /* Remueve el borde si no es necesario */
+}
+
+/* Asegura que el contenido de la tarjeta sea transparente */
+.card-body {
+    background-color: transparent;  /* Fondo transparente */
+}
+
+/* Asegura que el contenedor de video tenga un comportamiento adecuado */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;  /* Esto mantiene la proporción 16:9 */
+}
+
+/* Asegura que el iframe ocupe todo el contenedor */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Asegura que el video cubra el contenedor sin distorsión */
+}
+
+/* Contenedor principal con flexbox para evitar que se solapen */
+.row.g-0 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre el video y el contenido */
+}
+
+
+/* Texto blanco en la tarjeta */
+.card-title, .card-text {
+    color: white;  /* Texto blanco */
+}
+
+/* Asegura que el contenedor de video tenga un comportamiento adecuado */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;  /* Esto mantiene la proporción 16:9 */
+}
+
+/* Asegura que el iframe ocupe todo el contenedor */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Asegura que el video cubra el contenedor sin distorsión */
+}
+
+.progress {
+    height: 15px; /* Aumentamos la altura de las barras */
+    background: rgba(255, 255, 255, 0.37); /* Fondo sutil */
+    border-radius: 125px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(3, 250, 110, 0.5); /* Efecto de resplandor sutil */
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #03fa6e, #00c853); /* Degradado neón */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 125px;
+    position: relative;
+    animation: glow 1.5s infinite alternate; /* Animación de resplandor */
+}
+
+/* Efecto de brillo pulsante */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #03fa6e, 0 0 20px #03fa6e;
+    }
+    100% {
+        box-shadow: 0 0 20px #03fa6e, 0 0 40px #00c853;
+    }
+}
+
+@media (min-width: 768px) {
+    .iframe-container {
+        width: 500px;  /* Ancho del video */
+        height: 300px;  /* Altura del video */
+        margin: 0 auto;  /* Centra el contenedor del video */
+    }
+}
+
+@media (max-width: 767px) {
+    .iframe-container {
+        width: 400px;  /* Asegura que ocupe el 100% del ancho */
+        height: 200px;
+        padding-bottom: 56.25%;  /* Mantén la proporción 16:9 */
+        margin: 0 auto;  /* Centra el contenedor */
+    }
+}
+
+/* Overlay (superposición oscura sobre el video) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.7); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Tamaño del logo adaptable según el ancho de la pantalla */
+.logo {
+    width: 500px; /* Tamaño por defecto para 1440px en adelante */
+    height: auto;
+}
+
+@media (max-width: 1920px) {
+    .logo {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .logo {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1303px) {
+    .logo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1288px) {
+    .logo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        width: 325px;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo {
+        width: 259px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 220px;
+    }
+}
+
+/* Estilos de los enlaces de la barra de navegación */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;  /* Añadir transición suave al cambio de color */
+}
+
+/* Cambiar color cuando se pasa el ratón por encima */
+.navbar-nav .nav-link:hover {
+    color: #ffffff;  /* Color cuando se pasa el ratón */
+}
+
+/* Cambiar color cuando el enlace está activo (al estar seleccionado) */
+.navbar-nav .nav-link.active {
+    color: #03fa6e;  /* Color cuando el enlace está activo */
+}
+
+/* Cambiar color cuando se selecciona el enlace (activa) en dispositivos móviles */
+.navbar-nav .nav-link:focus {
+    color: #03fa6e;  /* Color cuando el enlace tiene foco */
+}
+
+/* Mostrar botón en pantallas pequeñas a partir de 996px */
+@media (min-width: 996px) {
+    #myButton {
+        display: block;
+    }
+}
+
+/* Ocultar el botón por defecto */
+#myButton {
+    display: none;
+}
+
+section {
+    height: 100vh;  /* Hace que cada sección ocupe toda la altura de la ventana */
+    scroll-snap-align: start; /* Ayuda a que el scroll se "ajuste" al iniciar cada sección */
+}
+
+/* Eliminar el margen por defecto y ajustar la alineación */
+.social-icons a {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Opcional: Estilo adicional para la separación entre los iconos */
+.social-icons {
+    display: inline-block;
+    margin-bottom: 20px; /* Ajusta si deseas más espacio entre los iconos y el texto */
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+}
+footer p {
+    margin-top: 20px;
+    background-color: black;
+}
+
+.btn-descarga {
+    background-color: #03fa6e; /* Color verde exacto */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descarga:hover {
+    background-color: #02d85e; /* Un tono más oscuro al pasar el mouse */
+}
+
+.card-body {
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(245, 243, 243, 0.644));
+    color: white;
+    padding: 10px;
+  }
+
+  .hover-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+}
+/* Estilo para la sección de contacto */
+.contact-info {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de gradiente para fondo de la sección */
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.3));
+    z-index: -1;
+    animation: gradientMove 3s ease infinite;
+}
+
+/* Animación para el gradiente en movimiento */
+@keyframes gradientMove {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+
+/* Estilo para los encabezados y párrafos */
+.contact-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #03fa6ee1; /* Resalta el encabezado */
+    text-shadow: 0 0 10px rgba(3, 250, 110, 0.8), 0 0 20px rgba(3, 250, 110, 0.5);
+}
+
+/* Estilo para los párrafos */
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+/* Efecto hover en los párrafos */
+.contact-info p:hover {
+    transform: translateY(-5px); /* Movimiento hacia arriba */
+    color: #03fa6ee1; /* Cambio de color al hacer hover */
+}
+
+/* Estilo para los enlaces */
+.contact-info a {
+    color: #03fa6ee1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Efecto hover en los enlaces */
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #03fa6ee1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.contact-info a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Para hacer que la sección sea responsiva */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .contact-info h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+}

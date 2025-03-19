@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Enlace a Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Enlace a Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a Bootstrap 5 Iconos(Redes sociales) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Enlace a hoja de estilos -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Enlace a script -->
+    <script src="../script.js" defer></script>
+    <!-- Enlace a GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black text-center py-2 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="logo.gif" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav nav-underline">
+                    <li class="nav-item"><a class="nav-link" href="../perfil/perfil.html">PERFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../habilidades/habilidades.html">HABILIDADES</a></li>
+
+                    <!-- Dropdown para Evidencias -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="evidencias/evidencias.html"
+                            id="navbarDropdownEvidencias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EVIDENCIAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEvidencias">
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia1">ACADÉMICO</a></li>
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia2">FREELANCE</a></li>
+                            <li><a class="dropdown-item" href="/evidencias/evidencias.html#evidencia3">PERSONAL</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown para Diplomas -->
+                    <li class="nav-item"><a class="nav-link" href="../diplomas/diplomas.html">DIPLOMAS</a></li>
+
+                    <!-- Dropdown para Certificados -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="certificados/certificados.html"
+                            id="navbarDropdownCertificados" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            CERTIFICADOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCertificados">
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado1">DESARROLLO WEB/APLICACIONES</a></li>
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado2">INTELIGENCIA ARTIFICIAL</a></li>
+                            <li><a class="dropdown-item" href="/certificados/certificados.html#certificado3">Y MÁS...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="../contactos/contactos.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección_1 -->
+    <div class="fondo-container" id="evidencia1">
+        <video autoplay muted loop>
+            <source src="Evidencia_1.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <h1>ACADÉMICO</h1>
+                <p>En este apartado encontrarás todas las evidencias relacionadas con mi formación universitaria.
+                    <br>
+                    Aquí muestro proyectos realizados a lo largo de mi carrera.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 g-10">
+                        <div class="col">
+                            <a href="https://www.youtube.com/watch?v=bDfKpON1T-Y&ab_channel=INGENEASTA"
+                                class="text-decoration-none">
+                                <div class="card">
+                                    <img src="img1.jpg" class="card-img-top img-fluid hover-effect" alt="IngeBlog">
+                                    <div class="card-body">
+                                        <p class="card-text">Mi viaje de experiencias, retos y todo lo que nadie te
+                                            cuenta
+                                            sobre la universidad en la Academia de Ingeniería en Sistemas.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <br>
+                        </div>
+                        <div class="col">
+                            <a href="https://santiing.github.io/MotivAcademy.github.io/" class="text-decoration-none">
+                                <div class="card">
+                                    <img src="img2.png" class="card-img-top img-fluid hover-effect" alt="Motiv Academy">
+                                    <div class="card-body">
+                                        <p class="card-text">Un proyecto web para aprender a gestionar emociones y
+                                            potenciar
+                                            el crecimiento personal y académico con contenido práctico.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección_2 -->
+    <div class="fondo-container" id="evidencia2">
+        <video autoplay muted loop>
+            <source src="Evidencia_2.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <h1>FREELANCE</h1>
+                <p>En esta sección presento los trabajos que he realizado en el ámbito profesional, tanto de forma
+                    independiente como colaborando con creadores de contenido, "empresas" y compañeros de distintas
+                    áreas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <div class="row row-cols-1 row-cols-md-2 g-10">
+                    <div class="col">
+                        <a href="https://www.youtube.com/@elinfinitoshowofic/featured" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img_3.png" class="card-img-top img-fluid hover-effect" alt="IngeBlog">
+                                <div class="card-body">
+                                    <p class="card-text">Colaboración con el creador de contenido de comedia "El
+                                        Infinito Show", para su canal y presencia online. Un proyecto divertido para
+                                        impulsar su contenido humorístico.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.youtube.com/@LuzdeLunaDueto" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img_4.png" class="card-img-top img-fluid hover-effect"
+                                    alt="Luz de Luna Dueto">
+                                <div class="card-body">
+                                    <p class="card-text">Colaboración con el dueto "Luz de Luna" en la creación de
+                                        contenido, diseño de banners y logotipos, además de formar parte de su
+                                        equipo donde colaboran con otros grupos musicales, ofreciendo una
+                                        experiencia única.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección_3 -->
+    <div class="fondo-container" id="evidencia3">
+        <video autoplay muted loop>
+            <source src="Evidencia_3.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <h1>PERSONAL</h1>
+                <p>Este espacio está dedicado a los proyectos que reflejan mis intereses y pasiones personales.
+                    <br>
+                    Aquí muestro contenido que he creado por gusto propio, incluyendo ediciones, diseños, videos y
+                    experimentos creativos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fondo-container">
+        <video autoplay muted loop>
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <div class="row row-cols-1 row-cols-md-2 g-10">
+                    <div class="col">
+                        <a href="https://www.youtube.com/watch?v=UYChuexjgIE&t=13s&ab_channel=SANTIAGO.S.A"
+                            class="text-decoration-none">
+                            <div class="card">
+                                <img src="img_5.png" class="card-img-top img-fluid hover-effect" alt="IngeBlog">
+                                <div class="card-body">
+                                    <p class="card-text">Este video marcó el inicio de mi camino como creador de
+                                        contenido, inspirado por los videojuegos y mis youtubers favoritos, a descubrir
+                                        mi camino como creador de contenido.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.youtube.com/watch?v=lvl8u68ipOc&ab_channel=INGENEASTA"
+                            class="text-decoration-none">
+                            <div class="card">
+                                <img src="img_6.png" class="card-img-top img-fluid hover-effect"
+                                    alt="Luz de Luna Dueto">
+                                <div class="card-body">
+                                    <p class="card-text">"Ingeneasta" nace de mi pasión por la ingeniería y el cine,
+                                        combinando mis sueños de ser cineasta y mi pasión por la ingeniería,
+                                        en un espacio para explorar el mundo y mi vida personal.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección_4 -->
+    <div class="fondo-container" id="evidencia3">
+        <video autoplay muted loop>
+            <source src="Evidencia_4.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <div class="contenido">
+                <p>Sé que este portafolio no muestra todo lo que soy capaz de hacer, pero elegí compartir lo más
+                    significativo y representativo de mi trabajo. Mi objetivo no es abrumar con demasiada información,
+                    sino ofrecer un vistazo claro a mis habilidades y a lo que realmente me apasiona. 
+                    <br>
+                    <br>
+                    Si deseas saber
+                    más sobre mis proyectos o cómo puedo aportar a tu equipo, no dudes en contactarme. Aquí verás lo
+                    esencial, lo que me define y lo que me enfoca. Cada uno de los ejemplos que presento refleja mi
+                    forma de trabajar, siempre orientada a resultados y con un enfoque claro en lo que hago.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-white text-center p-1">
+        <p class="mt-3">&copy; 2025 Santiago Sagrero Arvea. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100071773301879&locale=es_LA" target="_blank"
+                class="text-white me-3">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/@INGENEASTA" target="_blank" class="text-white">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
